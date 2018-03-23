@@ -11,8 +11,38 @@ console.log(answer3);
 console.log(answer4);
 console.log(answer5);
 if (answer1 === "yes"){
-console.log("entered");
+$(".language").hide();
+console.log("entered1");
 $("#c").show();   
+}
+else{
+        if(answer2 === "yes"){
+        $(".language").hide();
+        console.log("entered2");
+        $("#c").show(); 
+        } 
+        else{
+            if(answer3 === "yes"){
+            $(".language").hide();
+            console.log("entered3");
+            $("#c").show();     
+        }
+            else{
+                if(answer4 == "yes"){
+                    $(".language").hide();
+                    console.log("entered4");
+                    $("#j").show(); 
+                }
+                else{
+                    if(answer5 == "yes" || answer5 =="no"){
+                    $(".language").hide();
+                    console.log("entered5");
+                    $("#js").show();
+                    }
+                }
+            }
+    
+}
 }
 
 });

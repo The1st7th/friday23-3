@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
         <link rel="stylesheet "href="css/styles.css" type="text/css" media="all">
         <title>Survey Epicodus survey</title>
@@ -16,7 +17,7 @@
              <div class = "containter">
                 <div class ="row">
                  <div class ="col-md-12">
-                <img src="https://cdn0.froala.com/assets/editor/docs/server/meta-social/python-acc9c68ff62d73618344379ce3e645c9.png"  width="150" height="100" class="d-block mx-auto mb-4">
+                <img src="img/epicodus.png"  width="150" height="100" class="d-block mx-auto mb-4">
                  </div>
                 </div>
                 <div class ="row">
@@ -24,11 +25,16 @@
                 <h2 class="center">Welcome to Epicodus</h2>
                  </div>
                 </div>
-               <div class="row">
-                  <div class="col-md-4">
+                <div class ="row">
+                <div class ="col-md-3">
+                <textarea class="form-control custom-control" rows="3" style="resize:none" placeholder ="name here"></textarea>
+                </div>
+                </div>
+               <div class="row entry">
+                  <div class="col-md-5">
                    <p class="mart"><em> Do you want to be have access to overloading and conversion?</em></p>
                   </div>
-                  <div class="col-xs-9">
+                  <div class="col-xs-7">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="button btn btn-primary">
                           <input type="radio" name="1st" autocomplete="off" value="yes"> yes
@@ -39,11 +45,11 @@
                       </div>
                    </div>
                 </div>   
-               <div class="row">
-                  <div class="col-md-4">
+               <div class="row rest" id="1">
+                  <div class="col-md-5">
                    <p class="mart"><em>Do you want more control over memory allocation?</em></p>
                   </div>
-                  <div class="col-xs-9">
+                  <div class="col-xs-7">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="button btn btn-primary">
                           <input type="radio" name="2nd" autocomplete="off" value="yes"> yes
@@ -54,26 +60,26 @@
                       </div>
                    </div>
                 </div>
-               <div class="row">
-                  <div class="col-md-4">
+               <div class="row rest" id="2">
+                  <div class="col-md-5">
                    <p class="mart"><em> How important is control over threading important to you?</em></p>
                   </div>
-                  <div class="col-xs-9">
+                  <div class="col-xs-7">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="button btn btn-primary">
-                          <input type="radio" name="3rd" autocomplete="off" value="yes"> very
+                          <input type="radio" name="3rd" autocomplete="off" value="yes"> yes
                         </label>
                         <label class="button btn btn-primary">
-                          <input type="radio" name="3rd"autocomplete="off" value="no"> doesn't matter
+                          <input type="radio" name="3rd"autocomplete="off" value="no"> no
                         </label>
                       </div>
                    </div>
                 </div>
-               <div class="row">
-                  <div class="col-md-4">
+               <div class="row rest" id="3">
+                  <div class="col-md-5">
                    <p class="mart"><em> Stand-alone language?</em></p>
                   </div>
-                  <div class="col-xs-9">
+                  <div class="col-xs-7">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="button btn btn-primary">
                           <input type="radio" name="4th" autocomplete="off" value="yes"> yes
@@ -84,11 +90,11 @@
                       </div>
                    </div>
                 </div>
-               <div class="row">
-                  <div class="col-md-4">
+               <div class="row rest" id="4">
+                  <div class="col-md-5">
                    <p class="mart"><em> Are you more insterested in backend or front end?</em></p>
                   </div>
-                  <div class="col-xs-9">
+                  <div class="col-xs-7">
                       <div class="btn-group" data-toggle="buttons">
                         <label class="button btn btn-primary">
                           <input type="radio" name="5th" autocomplete="off" value="yes"> Front End
@@ -102,17 +108,20 @@
               <button type="submit" class="btn d-block mx-auto mb-4" id="validation">submit</button>
                <div class="row language" id="c">
                   <div class="col-md-12">
-                  <p  class ="center">learn C language</p>
+                  <img src="img/c.jpg"  width="150" height="100" class="d-block mx-auto mb-4">
+                  <p  class ="center"><span></span>learn C language</p>
                    </div>
                  </div>
                <div class="row language" id="j">
                   <div class="col-md-12">
-                  <p  class ="center">learn Java language</p>
+                     <img src="img/java.png"  width="150" height="100" class="d-block mx-auto mb-4">
+                      <p  class ="center"><span></span>learn Java language</p>
                    </div>
                  </div>
                <div class="row language" id="js">
                   <div class="col-md-12">
-                  <p class ="center">learn Javascript language</p>
+                  <img src="img/js.jpg"  width="150" height="100" class="d-block mx-auto mb-4">
+                  <p class ="center"><span></span>learn Javascript language</p>
                    </div>
                  </div>
         </div>
